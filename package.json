@@ -42,5 +42,28 @@
         "single"
       ]
     }
-  }
+  },
+  "dependencies": {
+    "angular": "^1.6.9"
+  },
+  "name": "4_21_18",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-mcneil/Random.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-mcneil/Random/issues"
+  },
+  "homepage": "https://github.com/paul-mcneil/Random#readme",
+  "description": ""
 }

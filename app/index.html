@@ -1,7 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700" rel="stylesheet">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inventory</title>
@@ -14,93 +18,120 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
+
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
+</head>
+
+<body>
+    <div class="pimg1">
+        <div class="container">
+            <span class="border">
+                <h2>Contact Topgolf
+                    <span>Swing Suite</span>
+                </h2>
+                <p class="section-intro">We'd love to hear from you! Fill out this form to learn more about playing at an existing Topgolf Swing Suite
+                    location, or request info about partnering with us for future locations.</p>
+            </span>
+            <section class="section-dark">
+                <div class="container">
+                    <form id="new-item" class="new-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Serial Number</label>
+                                    <input type="text" class="form-control" id="serial-num" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label >Description</label>
+                                    <input type="text" class="form-control" id="desc" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Location</label>
+                                    <input type="text" class="form-control" id="loc" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>RFID Num</label>
+                                    <input type="text" class="form-control" id="rfidnum"required>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                        <button type="submit" class="submit-button" id="addButton2">Submit</button>
+                    </form>
+                </div> <!-- container -->
+            </section>
+        </div> <!-- container -->
+
+        <div class="container">
+            <h2>Current Inventory</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Product Description</th>
+                        <th>Location</th>
+                        <th>RFID Tag</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>12345</td>
+                        <td>TaylorMade RBZ Black</td>
+                        <td>Warehouse</td>
+                        <td>e8b2eb</td>
+                    </tr>
+                    <tr>
+                        <td>351987</td>
+                        <td>12 Pack Titleist AVX Golf Balls</td>
+                        <td>Edison, NJ</td>
+                        <td>111ead</td>
+                    </tr>
+                    <tr>
+                        <td>5142009</td>
+                        <td>TaylorMade M3 Driver</td>
+                        <td>Chris's Bag</td>
+                        <td>d655a2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">Inventory</h3>
-      </div>
+        <section class="section section-dark">
+            <h2>Section two</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quas nam accusantium rerum in veniam itaque quae fugiat
+            et odit quibusdam nisi, iusto impedit ad culpa aspernatur vero. At, dolorem.
+        </section>
+    </div>
 
+    <div class="pimg3">
+    </div>
 
-      <form id="newItemForm2">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Serial Number</label>
-            <input type="text" class="form-control" id="serial-num" >
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Description</label>
-            <input type="text" class="form-control" id="desc">
-          </div>
-          <label >Location</label>
-          <input type="text" class="form-control" id="loc" >
-          <div class="form-group">
-              <label >Status</label>
-              <input type="text" class="form-control" id="status">
-          </div>           
-          <!-- <input type="submit" id="addButton2" value="Submit"> -->
-          <button type="submit" class="btn btn-default" id="addButton2">Submit</button>
-        </form>
-      </div>
-      <div class="container">
-        <h2>Current Inventory</h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Serial Number</th>
-              <th>Product Description</th>
-              <th>Location</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody">
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="container">
+        <section class="section section-dark">
+            <h2>Section three</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe, voluptate magnam eaque, dicta possimus aut
+            id dolorem corrupti nulla ea animi? Quos laborum illo nemo, velit exercitationem eligendi veniam.
+        </section>
+    </div>
 
+    <div class="pimg1">
+        <div class="container">
+            <h2>yay</h2>
+        </div>
+    </div>
 
-
-
-    </div> <!-- container -->
-
-    
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -108,7 +139,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -122,10 +153,9 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- script to add to item to table -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+</body>
+
 </html>

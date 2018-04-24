@@ -1,0 +1,30 @@
+.inventory-input{
+    background-image: url(../images/topgolf_img2.jpg);
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-inv{
+
+    font-size: 16px;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    line-height: 1.8em;
+    color:  #666666;
+
+}
+
+.pimg1{
+    color: purple;
+}
